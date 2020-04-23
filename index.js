@@ -32,3 +32,8 @@ app.delete('/users/:id', users.deleteUser)
 
 // Log in and sign up
 app.post('/signup-login', register.newSignUp)
+
+// Start server
+app.listen(process.env.PORT || 8081, () => {
+  console.log(`Server listening`)
+})

@@ -10,4 +10,4 @@ const db = new Pool({
   ssl: isProduction
 })
 
-module.exports = db
+module.exports = { db }
