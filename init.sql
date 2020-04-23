@@ -3,3 +3,6 @@ CREATE TABLE users (
   user_full_name VARCHAR(255) NOT NULL,
   email VARCHAR(255) NOT NULL
 );
+
+INSERT INTO users (user_full_name, email)
+VALUES  ('David Budimir', 'dav.budimir@gmail.com');
