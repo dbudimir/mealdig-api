@@ -16,10 +16,6 @@ app.get('/', (request, response) => {
   response.json({ info: 'Node.js, Express, and Postgres API' })
 })
 
-app.listen(process.env.PORT || 8080, () => {
-  console.log(`Server listening`)
-})
-
 const users = require('./users')
 const register = require('./signup-login')
 
