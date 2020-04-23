@@ -1,4 +1,4 @@
-const db = require('./connection')
+const db = require('./config')
 
 // POST Create new user
 const newSignUp = async (request, response) => {

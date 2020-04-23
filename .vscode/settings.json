@@ -3,6 +3,9 @@
 		"editor.defaultFormatter": "bysabi.prettier-vscode-standard",
 		"editor.formatOnSave": true
 	},
+	"[sql]": {
+		"editor.formatOnSave": false
+	},
 	// "workbench.colorTheme": "One Dark Pro",
 	"prettier.printWidth": 120,
 	"prettier.eslintIntegration": true,

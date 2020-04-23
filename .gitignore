@@ -2,3 +2,21 @@
 
 # dependencies
 /node_modules
+
+# testing
+/coverage
+
+# production
+/build
+/dist
+/.next
+
+# misc
+.DS_Store
+.env
+.vscode
+.prettierrc.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+key.json
