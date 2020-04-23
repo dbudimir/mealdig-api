@@ -24,13 +24,17 @@ const getUserById = (request, response) => {
 
 // POST Create new user
 const createUser = async (request, response) => {
-  const { name, email } = request.body
+  const { name, email, orders } = request.body
 
-  db.query('INSERT INTO users (name, email) VALUES ($1, $2)', [name, email], (error, results) => {
-    if (error) {
-      throw error
+  db.query(
+    'INSERT INTO users (user_full_name, email, orders) VALUES ($1, $2, $3)',
+    [name, email, orders],
+    (error, results) => {
+      if (error) {
+        throw error
+      }
     }
-  })
+  )
   db.query('SELECT * FROM users WHERE email = $1', [email], (error, results) => {
     response.status(200).json(results.rows)
   })
