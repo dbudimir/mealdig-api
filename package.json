@@ -12,6 +12,7 @@
     "start:dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "migrate": "node-pg-migrate",
+    "prod": "git push heroku master && heroku run rake db:migrate && heroku restart",
     "heroku-postbuild": "npm install --production"
   },
   "keywords": [],
